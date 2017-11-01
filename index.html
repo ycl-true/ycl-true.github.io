@@ -8,8 +8,16 @@
 </head>
 <body>
 <br>
-<div >
-	hello world
+<div id="abc">
+魏倩是个大傻逼
 </div>
+<script>
+var i=0;
+function shine(id){
+	var obj= document.getElementById(id);
+	if(i==0){obj.style.color="#000";i=1;}else{obj.style.color="red";i=0}
+}
+setInterval("shine('abc')",100);
+</script>
 </body>
 </html>
