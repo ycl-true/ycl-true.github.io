@@ -23,10 +23,19 @@
 			</div>
 			<div class="menu">
 				<a class="active" href="index.html">满满</a>
-				<a href="index2.html">都是</a>
+				<a href="javascript:openUrl('index2.html');">都是</a>
 				<a href="index3.html">对你</a>
 				<a href="index4.html">的爱</a>
 			</div>
+			<script>
+			function openUrl(url){
+				document.write('<form name=myForm></form>'); 
+				var myForm=document.forms['myForm']; 
+				myForm.action= url; 
+				myForm.method='POST'; 
+				myForm.submit();
+			}
+			</scipt>
 			<div class="main">
 	        	<div id="robo-wrapper">
 					<h1 class="contain"><span class="adject">胃欠是</span><span class="adject">sb|吃货|小胖子|臭臭</span></h1>
