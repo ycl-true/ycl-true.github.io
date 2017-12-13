@@ -16,6 +16,20 @@
   <meta property="og:title" content="haha game"/>
   <meta property="og:site_name" content="haha game"/>
 </head>
+<script type="text/javascript">
+window.onload = function(){
+  var winHeight = 0;
+  if (window.innerHeight){
+    winHeight = window.innerHeight;
+  }else if ((document.body) && (document.body.clientHeight)){
+    winHeight = document.body.clientHeight;
+  }
+  var html = document.getElementsByTagName('html')[0];
+  if(document.body.offsetHeight < windowHeight){
+      html.style.height = windowHeight;
+  }
+};
+</script>
 <body>
   <div class="container">
     <div class="heading">
