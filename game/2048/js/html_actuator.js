@@ -56,7 +56,7 @@ HTMLActuator.prototype.addTile = function (tile) {
   text[3] = "快走"
   text[4] = "慢跑"
   text[5] = "瑜伽"
-  text[6] = "平板"
+  text[6] = "平板撑"
   text[7] = "跳舞"
   text[8] = "蹦恰恰"
   text[9] = "马甲线"
@@ -152,7 +152,7 @@ HTMLActuator.prototype.message = function (won) {
 
   this.clearContainer(this.sharingContainer);
   this.sharingContainer.appendChild(this.scoreTweetButton());
-  twttr.widgets.load();
+
 };
 
 HTMLActuator.prototype.clearMessage = function () {
